@@ -70,7 +70,7 @@ class AddTaskActivity : AppCompatActivity() {
 
             )
            TaskDataSource.insertTask(task)
-           Log.e("TAG","insertListeners" + TaskDataSource.getList())
+           finish()
         }
 
     }

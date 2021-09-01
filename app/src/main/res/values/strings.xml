@@ -7,4 +7,5 @@
     <string name="task_time">Hora</string>
     <string name="create_task_button">Criar Tarefa</string>
     <string name="task_cancel">Cancelar</string>
+    <string name="new_task_description">Nova Tarefa</string>
 </resources>
