@@ -108,18 +108,19 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_Cancel"
         app:layout_constraintStart_toStartOf="@id/guideline_start"
         app:layout_constraintEnd_toEndOf="@id/guideline_end"
         android:layout_marginBottom="16dp"
         android:textAllCaps="false"
         android:text="@string/task_cancel"
-        app:layout_constraintBottom_toTopOf="@id/create_task"
+        app:layout_constraintBottom_toTopOf="@id/btn_create_task"
         android:layout_width="0dp"
         style="@style/Widget.MaterialComponents.Button.OutlinedButton"
         android:layout_height="wrap_content"/>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/create_task"
+        android:id="@+id/btn_create_task"
         app:layout_constraintStart_toStartOf="@id/guideline_start"
         app:layout_constraintEnd_toEndOf="@id/guideline_end"
         android:layout_marginBottom="16dp"
