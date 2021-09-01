@@ -8,4 +8,6 @@
     <string name="create_task_button">Criar Tarefa</string>
     <string name="task_cancel">Cancelar</string>
     <string name="new_task_description">Nova Tarefa</string>
+    <string name="label_edit">Editar</string>
+    <string name="label_delete">Deletar</string>
 </resources>
