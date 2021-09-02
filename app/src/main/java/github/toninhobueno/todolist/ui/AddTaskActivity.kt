@@ -26,6 +26,16 @@ class AddTaskActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
+        if (intent.hasExtra(TASK_ID)){
+            val taskId = intent.getIntExtra(TASK_ID,0)
+            TaskDataSource.findById(taskId)?.let {
+                binding.taskTitle.text = it.title
+                binding.taskDescription.text = it.description
+                binding.taskDate.text = it.date
+                binding.taskTime.text = it.hour
+            }
+        }
+
         insertListeners()
     }
 
@@ -67,8 +77,8 @@ class AddTaskActivity : AppCompatActivity() {
                 title = binding.taskTitle.text ,
                 description = binding.taskDescription.text ,
                 date = binding.taskDate.text,
-                hour = binding.taskTime.text
-
+                hour = binding.taskTime.text,
+                id = intent.getIntExtra(TASK_ID,0)
             )
            TaskDataSource.insertTask(task)
 
@@ -77,4 +87,9 @@ class AddTaskActivity : AppCompatActivity() {
         }
 
     }
+
+    companion object {
+        const val TASK_ID = "task_id"
+    }
+
 }
