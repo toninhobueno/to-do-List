@@ -18,6 +18,8 @@
         android:layout_margin="16dp"
         />
 
+    <include android:id="@+id/include_empty"
+        layout = "@layout/empty_state" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_tasks"
