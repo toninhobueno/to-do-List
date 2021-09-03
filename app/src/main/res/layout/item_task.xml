@@ -26,6 +26,18 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:maxLines="2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            tools:text="Aula de Engenharia de software" />
+
+        <TextView
             android:id="@+id/tv_date_hour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -33,7 +45,7 @@
             android:textColor="@color/black"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_description"
             tools:text="23/10/2021 20:00hs" />
 
         <androidx.appcompat.widget.AppCompatImageView
